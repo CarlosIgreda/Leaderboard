@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+* {
+  font-family: 'Comic Neue', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  margin: auto;
+}
+
+::placeholder {
+  font-weight: bold;
+  color: #000;
+  padding: 0.2rem;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.bt {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  background-color: #fff;
+  padding: 0.1rem 0.8rem;
+  border-bottom: 5px solid #000;
+  border-right: 5px solid #000;
+  cursor: pointer;
+}
+
+.fullContainer {
+  padding: 3rem;
+  display: flex;
+  gap: 20rem;
+}
+
+.textScoreContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submit {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.input {
+  padding: 0.2rem;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+.table {
+  border: 2px solid #000;
+  list-style: none;
+}
+
+.items {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.items:nth-child(2n) {
+  background-color: lavender;
+}
