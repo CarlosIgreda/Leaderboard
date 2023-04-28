@@ -20,7 +20,7 @@
 
 # 📖 To Do list <a name="about-project"></a>
 
-In this activity I will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. I should develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, I will consume the Leaderboard API using JavaScript async and await and add some styling.
+In this activity I will continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -59,7 +59,11 @@ In this activity I will set up a JavaScript project for the Leaderboard list app
 - **Use proper ES6 syntax**
 - **Use npm as software packages system**
 - **Use webpack to bundle JavaScript**
-- **Use ES6 modules to write modular JavaScript**
+- **Send and receive data from an API**
+- **Use API documentation**
+- **Understand and use JSON**
+- **Make JavaScript code asynchronous**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,8 +108,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use Leaderboard API**
-- [ ] **Async and await**
+- [ ] **Apply styling**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
