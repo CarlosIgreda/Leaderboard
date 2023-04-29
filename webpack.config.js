@@ -6,11 +6,26 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+      serveIndex: true,
+      watch: true,
+      staticOptions: {
+        extensions: ['mp3', 'ogg'],
+        setHeaders(res) {
+          res.set('Access-Control-Allow-Origin', '*');
+        },
+      },
+    },
   },
   mode: 'development',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      favicon: './src/images/gunboundIcon.ico',
     }),
   ],
   module: {
@@ -18,6 +33,13 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(mp3)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'audio/[hash][ext][query]',
+        },
       },
     ],
   },
