@@ -26,7 +26,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      // favicon: './src/images/gunboundIcon.ico',
+      favicon: './src/images/gunboundIcon.ico',
     }),
   ],
   module: {
