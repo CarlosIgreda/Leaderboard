@@ -7,7 +7,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
+    clean: true,
   },
+  devtool: 'inline-source-map',
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
