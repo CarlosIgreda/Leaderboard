@@ -20,7 +20,7 @@
 
 # 📖 To Do list <a name="about-project"></a>
 
-In this activity I will continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -108,7 +108,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Apply styling**
+- [ ] **Use js frameworks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

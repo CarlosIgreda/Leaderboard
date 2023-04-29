@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 * {
   font-family: 'Comic Neue', sans-serif;
@@ -10,8 +11,12 @@
 body {
   display: flex;
   justify-content: center;
-  padding: 3rem 2rem;
+  padding: 1rem;
   margin: auto;
+  background-image: url(https://i.postimg.cc/NMG57Vvk/original-DB2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 ::placeholder {
@@ -20,39 +25,99 @@ body {
   padding: 0.2rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.logo-title-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 4px solid goldenrod;
+  border-style: double;
+  border-radius: 3rem;
+  padding: 0.3rem 1.5rem;
+  background-image: url(https://i.postimg.cc/LsLz0G7d/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .title {
-  font-weight: 900;
-  font-size: 3rem;
+  font-family: 'Bungee Inline', cursive;
+  color: gold;
+  font-weight: 400;
+  font-size: 2.7rem;
   letter-spacing: 0.1rem;
+  filter: brightness(110%);
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px gray, 0 0 2px gray, 0 0 10px gray, 0 0 20px gray, 0 0 50px gray, 0 0 75px gray;
+  animation: white 2s ease-in-out infinite alternate;
+}
+
+.logo {
+  width: 10%;
+}
+
+.error {
+  display: none;
+  background-color: gold;
+  border: 2px solid #000;
+  border-style: double;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+  transition: 0.3s ease-in-out;
+  text-align: center;
 }
 
 .subtitle {
+  color: gold;
+  font-family: 'Bungee Inline', cursive;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.05rem;
+  filter: brightness(110%);
+  text-shadow: 0 0 2px rgb(255, 255, 255), 0 0 2px gray, 0 0 5px gray, 0 0 10px gray, 0 0 20px gray, 0 0 50px gray, 0 0 75px gray;
+  animation: white 2s ease-in-out infinite alternate;
 }
 
-.bt {
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.03rem;
-  background-color: #fff;
-  padding: 0.1rem 0.8rem;
-  border-bottom: 5px solid #000;
-  border-right: 5px solid #000;
+.refresh {
+  width: 5%;
+  height: 5%;
   cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.submit {
+  align-self: flex-end;
+  width: 15%;
+  height: 15%;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 .fullContainer {
-  padding: 3rem;
   display: flex;
-  gap: 20rem;
+  gap: 15rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .textScoreContainer {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  border: 4px solid goldenrod;
+  border-style: double;
+  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  background-image: url(https://i.postimg.cc/LsLz0G7d/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .section1 {
@@ -61,35 +126,81 @@ body {
   gap: 1rem;
 }
 
+.table-and-add {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section2 {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-.submit {
-  width: 50%;
-  align-self: flex-end;
+  justify-content: space-between;
+  height: 18rem;
+  border: 4px solid goldenrod;
+  border-style: double;
+  padding: 0.8rem;
+  background-image: url(https://i.postimg.cc/LsLz0G7d/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .input {
-  padding: 0.2rem;
+  padding: 0.5rem;
   font-weight: bold;
   border: 2px solid #000;
+  border-radius: 3rem;
+  border-style: double;
+  box-shadow: 0 1px 2px 0 rgba(235, 243, 243, 0.7), 1px 2px 4px 0 rgba(235, 243, 243, 0.7), 2px 4px 8px 0 rgba(235, 243, 243, 0.7), 2px 4px 16px 0 rgba(235, 243, 243, 0.7);
+}
+
+.cont {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .table {
-  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem;
+  border: 4px solid goldenrod;
+  border-style: double;
   list-style: none;
+  background-image: url(https://i.postimg.cc/LsLz0G7d/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 18rem;
+  overflow-y: scroll;
 }
 
 .items {
+  font-size: 1rem;
   font-weight: bold;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 0.3rem;
+  gap: 15rem;
+  color: #fff;
 }
 
-.items:nth-child(2n) {
-  background-color: lavender;
+.table::-webkit-scrollbar {
+  width: 10px;
+  background: darkslategray;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background: gold;
+  border-radius: 10px;
+  border-right: 2px solid darkslategray;
+}
+
+.submit:hover {
+  transform: scale(1.3) rotate(180deg);
+}
+
+.refresh:hover {
+  transform: scale(1.4) rotate(360deg);
 }
