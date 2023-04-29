@@ -7,7 +7,6 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
-    clean: true,
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -27,7 +26,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/images/gunboundIcon.ico',
+      // favicon: './src/images/gunboundIcon.ico',
     }),
   ],
   module: {
