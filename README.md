@@ -92,7 +92,13 @@ Clone this repository to your desired folder:
 
 ```sh
   cd [my-folder]
-  git clone "repoLink"
+  git clone "putHereRepoLink"
+```
+and use this commands to initiliaze all packages:
+
+```sh
+  npm install
+  npm start
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
