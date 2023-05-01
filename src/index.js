@@ -114,10 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const refreshTable = async () => {
-    await getScores(`${API_URL}/games/ZMXpUtkGRj3HLotOXTHS/scores/`);
+    await getScores(`${API_URL}/games/HspC8OHIhu3ag1r0dylu/scores/`);
   };
 
-  getScores(`${API_URL}/games/ZMXpUtkGRj3HLotOXTHS/scores/`);
+  getScores(`${API_URL}/games/HspC8OHIhu3ag1r0dylu/scores/`);
 
   $submit.addEventListener('click', () => {
     const lettersOnly = /^[a-zA-Z]+$/;
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
         return;
       }
-      addScore(`${API_URL}/games/ZMXpUtkGRj3HLotOXTHS/scores/`);
+      addScore(`${API_URL}/games/HspC8OHIhu3ag1r0dylu/scores/`);
     } else {
       $error1.style.display = 'block';
       setTimeout(() => {
