@@ -69,7 +69,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://carlosigreda.github.io/Leaderboard/dist)
+- [Live Demo Link]([https://carlosigreda.github.io/Leaderboard/dist](https://gunbound-leaderboard.netlify.app/))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
